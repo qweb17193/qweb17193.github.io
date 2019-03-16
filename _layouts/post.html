@@ -52,7 +52,7 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      Debug: Nopager var: {{ page.no_pager }}<br>
+      {% comment %} Debug: Nopager var: {{ page.no_pager }}<br> {% end_comment %}
 
       {% assign show_pager_1 = true %}
       {% if page.no_pager == true  %}
