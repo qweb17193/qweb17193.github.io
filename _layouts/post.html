@@ -52,7 +52,7 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      {% if page.no_pager == false %}
+      {% if page.no_pager == blank %}
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
