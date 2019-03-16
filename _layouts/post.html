@@ -52,7 +52,8 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      {% if page.no_pager == blank %}
+      {% if page.no_pager.size == 0 %}
+      Debug: Nopager var: {{ page.no_pager }}<br>
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
