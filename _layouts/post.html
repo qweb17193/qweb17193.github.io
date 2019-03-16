@@ -53,7 +53,13 @@ layout: base
       {% endif %}
 
       Debug: Nopager var: {{ page.no_pager }}<br>
-      {% if page.no_pager.size == 0 %}
+
+      {% assign show_pager_1 = true %}
+      {% if page.no_pager == true  %}
+         {% assign show_pager_1 = false %}
+      {% endif %}
+
+      {% if show_pager_1 %}
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
